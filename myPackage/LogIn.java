@@ -4,7 +4,7 @@ import java.sql.*;
 import java.util.Scanner;
 
 public class LogIn {
-
+    private static int id;
     private static String first_name;
     private static String last_name;
     private static String email;
@@ -33,7 +33,7 @@ public class LogIn {
 	}
 
 
-    public static void checkInfo()
+    public static int checkInfo()
     {
         Scanner  scan = new Scanner(System.in);  // Create a Scanner object
 
@@ -41,7 +41,7 @@ public class LogIn {
 
         while (true) {
             
-            System.out.print("Email     : ");
+            System.out.print("\nEmail     : ");
             email = scan.nextLine();
 
             try
@@ -50,6 +50,7 @@ public class LogIn {
 
                 if(myRs.next())
                 {
+                    id = Integer.parseInt(myRs.getString("id"));
                     first_name = myRs.getString("first_name");
                     last_name = myRs.getString("last_name");
                     password = myRs.getString("encrypted_password");
@@ -74,8 +75,7 @@ public class LogIn {
             if (temp_password.equals(PasswordSecurity.decrypt(password)))
             {
                 System.out.println("\n////////////// WELCOME ///////////////////\n");
-                System.out.println("  Your login was successful, " + first_name + ".");
-                System.out.println("\n//////////////////////////////////////////\n");
+                System.out.println("Your login was successful, " + first_name + ".\n");
                 break;
             }
             else
@@ -83,8 +83,7 @@ public class LogIn {
                 System.out.println("\n / Password does not match /");
             }
         }
-
-        scan.close();
+        return id;
     }
 
 }

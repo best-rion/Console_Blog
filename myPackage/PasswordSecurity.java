@@ -24,9 +24,6 @@ public class PasswordSecurity {
 
 		String decrypted = encryptor.decrypt(encryptedPass);
 		
-
-		
-		System.out.println(decrypted);
 		
 		return decrypted;
 	}

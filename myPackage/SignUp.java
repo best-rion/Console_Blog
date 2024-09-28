@@ -69,9 +69,7 @@ public class SignUp {
 
         Scanner scan = new Scanner(System.in);  // Create a Scanner object
 
-        System.out.print("");
-
-        System.out.print("First Name         : ");
+        System.out.print("\nFirst Name         : ");
         first_name = scan.nextLine();
 
         System.out.print("Last Name          : ");
