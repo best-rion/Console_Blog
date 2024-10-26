@@ -1,4 +1,4 @@
-<strong>My First CRUD app in Java</strong>
+# My First CRUD app in Java
 
 *  Create your MySQL database and fill the information in DBInfo.java file.
 
