@@ -3,7 +3,7 @@
   Create your MySQL database and fill the information in DBInfo.java file.
 
   Create a user table that contains these columns.
-   +--------------------+--------------+------+-----+---------+----------------+
+   +--------------------+--------------+------+-----+---------+----------------+\n
    | Field              | Type         | Null | Key | Default | Extra          |
    +--------------------+--------------+------+-----+---------+----------------+
    | id                 | int          | NO   | PRI | NULL    | auto_increment |
