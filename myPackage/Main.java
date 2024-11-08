@@ -103,7 +103,8 @@ public class Main{
                 int current_user_id = 0;
 
                 Scanner scan = new Scanner(System.in);
-                System.out.print("Type \'S\' for Signup, \'L\' for Login : ");
+                System.out.println("[1]Signup     [2]Login");
+		System.out.print("choose :");
                 String loginOrSignup = scan.nextLine();
 
 
