@@ -108,11 +108,11 @@ public class Main{
                 String loginOrSignup = scan.nextLine();
 
 
-                if (loginOrSignup.equals("S")) // Sign Up
+                if (loginOrSignup.equals("1")) // Sign Up
                 {
                         SignUp.setInfo();
                 }
-                else if (loginOrSignup.equals("L"))
+                else if (loginOrSignup.equals("2"))
                 {
                         current_user_id = LogIn.checkInfo();
                 }
